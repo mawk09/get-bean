@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 public class AsyncService implements ApplicationContextAware {
     private ApplicationContext applicationContext;
 
-
     @Async
     public void doAsync() {
         SecondService secondService = applicationContext.getBean(SecondService.class);

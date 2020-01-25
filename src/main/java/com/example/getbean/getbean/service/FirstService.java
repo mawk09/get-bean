@@ -1,11 +1,12 @@
 package com.example.getbean.getbean.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
 @Service
+@Scope("prototype")
 public class FirstService {
     private final SecondService secondService;
     private ThirdService thirdService;
